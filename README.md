@@ -1,4 +1,93 @@
-# Análise de Dados do Programa "Alfabetiza Sergipe" em 2025 (Programa Brasil Alfabetizado realizado no estado de Sergipe) — SEDUC/SE & FGV DGPE
+# 🇬🇧 Data Analysis for the "Alfabetiza Sergipe" 2025 Program (Programa Brasil Alfabetizado in the State of Sergipe) — SEDUC/SE & FGV DGPE
+
+This repository centralizes the data analysis codes and workflows developed by me and validated by the **Fundação Getulio Vargas (FGV DGPE)** team responsible for implementing the PBA SE 2025. This project was carried out in compliance with the contractual milestones established with the **State Secretariat of Education of Sergipe (SEDUC-SE)** for the pedagogical and statistical monitoring of the literacy program's classes (PBA 2025).
+
+The primary objective of this analysis suite is to process the educational data generated during the program's execution to produce the official technical reports designated in the contract between FGV DGPE and the State Secretariat of Education of Sergipe (SEDUC SE).
+
+---
+
+## 🔒 Data Governance and Compliance (LGPD)
+
+In strict compliance with the Brazilian **General Data Protection Law (LGPD - Law No. 13,709/2018)** and institutional compliance guidelines, **no Personally Identifiable Information (PII)** is exposed in this public repository.
+
+* All textual data (Names of students, literacy teachers, and coordinators) and numerical records (CPFs and Phone Numbers) have been replaced with fictitious equivalents generated deterministically using the `Faker` library.
+* Referential integrity and data crossovers between different notebooks have been fully preserved through a local persistent mapping architecture.
+* Macro-level spatial data (**Neighborhoods** and **Full Addresses**) have also been replaced with fictitious equivalents generated deterministically via `Faker`.
+* The anonymization pipeline utilized in this project is documented in the `protect_sensitive_data.ipynb` file.
+
+---
+
+## 📐 Analysis File Structure (.ipynb)
+
+The analysis notebooks are systematically organized using prefixes that identify the specific group of classes evaluated, followed by the type of assessment activity in the pedagogical cycle.
+
+### 🧩 Understanding the Prefix Nomenclature
+
+1.  **`SE_` (Regular Classes):** Reports concerning the main group of classes that started their activities according to the regularly planned schedule.
+2.  **`SE35_` (Late-Starting Classes):** Exclusive analyses for the 35 classes that started their cycle late. Due to methodological and scheduling differences, they required separate monitoring and reporting.
+3.  **`SE_aditivo_` (Contract Addendum):** Reports focusing on the 30 additional classes integrated into the program under the contractual addendum signed between FGV DGPE and SEDUC-SE.
+
+### 📑 Mapping Notebooks by Pedagogical Evaluation Cycle
+
+| Jupyter Notebook File | Group Scope | Pedagogical Evaluation Cycle |
+| :--- | :--- | :--- |
+| `SE_Diagnostica.ipynb` | Regular Classes | Diagnostic Evaluation (Baseline/Entry) |
+| `SE_Relatorio_2.1.1.ipynb` | Regular Classes | Formative Activity 1 |
+| `SE_Relatorio_2.2.1.ipynb` | Regular Classes | Formative Activity 2 |
+| `SE_Relatorio_2.3.2.ipynb` | Regular Classes | Formative Activity 3 |
+| `SE_Relatorio_2.4.2.ipynb` | Regular Classes | Formative Activity 4 |
+| `SE_Somativa.ipynb` | Regular Classes | Summative Evaluation (Endline/Final) |
+| `SE_Somativa_348_turmas.ipynb` | Regular Classes | Final Consolidation of the 348 Classes |
+| | | |
+| `SE35_Diagnostica.ipynb` | Late-Starting Classes | Diagnostic Evaluation (Baseline/Entry) |
+| `SE35_Relatorio_2.1.1.ipynb` | Late-Starting Classes | Formative Activity 1 |
+| `SE35_Relatorio_2.2.1.ipynb` | Late-Starting Classes | Formative Activity 2 |
+| `SE35_Relatorio_2.3.1.ipynb` | Late-Starting Classes | Formative Activity 3 |
+| `SE35_Relatorio_2.4.2.ipynb` | Late-Starting Classes | Formative Activity 4 |
+| `SE35_Relatorio_Somativa.ipynb` | Late-Starting Classes | Summative Evaluation (Endline/Final) |
+| | | |
+| `SE_aditivo_Diagnostica.ipynb` | Addendum (+30 Classes) | Diagnostic Evaluation (Baseline/Entry) |
+| `SE_aditivo_Relatorio_2.1.1.ipynb` | Addendum (+30 Classes) | Formative Activity 1 |
+| `SE_aditivo_Relatorio_2.2.ipynb` | Addendum (+30 Classes) | Formative Activity 2 |
+| `SE_aditivo_Relatorio_2.3.ipynb` | Addendum (+30 Classes) | Formative Activity 3 |
+| `SE_aditivo_Relatorio_2.3_extra.ipynb`| Addendum (+30 Classes) | Complementary Formative Analysis 3 |
+| `SE_aditivo_Relatorio_Somativa.ipynb` | Addendum (+30 Classes) | Summative Evaluation (Endline/Final) |
+
+### 🛠️ Auxiliary and Infrastructure Notebooks
+* `Analise_especialistas.ipynb`: Analysis requested by the Pedagogical department of FGV DGPE to evaluate and understand the program's outcomes (still under construction).
+* `protect_sensitive_data.ipynb`: Script responsible for masking, PII sanitization, and the controlled generation of stable encryption/anonymization dictionaries.
+
+---
+
+## 💻 Tech Stack and Execution
+
+The analyses were entirely developed using the **Python** programming language and its scientific data analysis ecosystem:
+
+* **Data Manipulation and Cleaning:** `pandas`, `numpy`
+* **Anonymization and Synthetic Sampling:** `faker`
+* **Data Structure I/O:** `openpyxl`, `xlrd`
+
+### 📂 Reproducibility and Data Download
+
+Due to storage guidelines and **GitHub file size limit policies** for large datasets, the original and processed source files (`.xlsx`, `.csv`, among others) have been omitted from this repository's main file tree.
+
+To reproduce all analyses, metrics, and charts present in the notebooks, the complete dataset package containing the public tables (fully anonymized with fictitious data) must be downloaded externally:
+
+👉 **[Click here to download the anonymized data files](https://1drv.ms/f/c/835153c0338453fe/IgCEuAoJgzJUSLyY76mmSd24AQugqQweobBXIl4FdewfjiU?e=JGPQud)**
+
+> 📥 **Storage Instructions:** After downloading, extract and place the files directly inside the local folder structure at `Data_files/public_data/` before launching Jupyter Notebook.
+
+### 🚀 How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+
+
+---
+
+
+# 🇧🇷 Análise de Dados do Programa "Alfabetiza Sergipe" em 2025 (Programa Brasil Alfabetizado realizado no estado de Sergipe) — SEDUC/SE & FGV DGPE
 
 Este repositório centraliza os códigos e as análises de dados desenvolvidos por mim e validados pela equipe da **Fundação Getulio Vargas (FGV DGPE)** responsável pela aplicação do PBA SE 2025, em cumprimento às metas contratuais estabelecidas com a **Secretaria de Educação do Estado de Sergipe (SEDUC-SE)** para o monitoramento pedagógico e estatístico das turmas do programa de alfabetização (PBA 2025).
 
