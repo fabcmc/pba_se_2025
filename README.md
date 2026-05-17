@@ -73,7 +73,7 @@ Devido às diretrizes de armazenamento e **políticas de limite de espaço do Gi
 
 Para fins de reprodutibilidade de todas as análises e gráficos presentes nos notebooks, o pacote completo contendo as tabelas públicas (já anonimizadas com dados fictícios) deve ser baixado externamente:
 
-👉 **[Clique aqui para baixar os arquivos de dados anonimizados](COLE_AQUI_O_LINK_DO_SEU_DRIVE_OU_NUVEM)**
+👉 **[Clique aqui para baixar os arquivos de dados anonimizados](https://1drv.ms/f/c/835153c0338453fe/IgCEuAoJgzJUSLyY76mmSd24AQugqQweobBXIl4FdewfjiU?e=JGPQud)**
 
 > 📥 **Instrução de Armazenamento:** Após o download, extraia e insira os arquivos diretamente dentro da pasta de estrutura local `Data_files/public_data/` antes de inicializar o Jupyter Notebook.
 
