@@ -1,0 +1,2445 @@
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>municipio</th>
+      <th>turmas_em_unid_1</th>
+      <th>turmas_em_unid_2</th>
+      <th>turmas_em_unid_3</th>
+      <th>turmas_em_unid_4</th>
+      <th>turmas_em_somativa</th>
+      <th>turmas_finalizadas</th>
+      <th>total_turmas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Aquidabã</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Aracaju</td>
+      <td>0</td>
+      <td>8</td>
+      <td>22</td>
+      <td>19</td>
+      <td>0</td>
+      <td>0</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Areia Branca</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Boquim</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Canindé de São Francisco</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Capela</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>6</td>
+      <td>2</td>
+      <td>1</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Carira</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Cristinápolis</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Estância</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Frei Paulo</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Indiaroba</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Itabaiana</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Itabaianinha</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Itaporanga d'Ajuda</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Japoatã</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Lagarto</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>10</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Laranjeiras</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Monte Alegre de Sergipe</td>
+      <td>0</td>
+      <td>2</td>
+      <td>6</td>
+      <td>2</td>
+      <td>0</td>
+      <td>3</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Neópolis</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Nossa Senhora das Dores</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Nossa Senhora do Socorro</td>
+      <td>2</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Pacatuba</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Porto da Folha</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7</td>
+      <td>4</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Poço Redondo</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Poço Verde</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Propriá</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Riachão do Dantas</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Salgado</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Santa Luzia do Itanhy</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Simão Dias</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>15</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>São Cristóvão</td>
+      <td>0</td>
+      <td>5</td>
+      <td>6</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Tobias Barreto</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Umbaúba</td>
+      <td>0</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+=== ANÁLISE CONSIDERANDO ANÁLISE LINGUÍSTICA PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 4528.000, p-valor = 0.0000
+Há diferença significativa (p < 0.05) nas proporções de Nível 1 entre os testes.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 9952.000, p-valor = 0.0010
+Há diferença significativa (p < 0.05) nas proporções de Nível 2 entre os testes.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 4702.000, p-valor = 0.0000
+Há diferença significativa (p < 0.05) nas proporções de Nível 3 entre os testes.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+---
+
+=== ANÁLISE CONSIDERANDO ANÁLISE LINGUÍSTICA POR MUNICÍPIO ===
+
+
+Município: Canindé de São Francisco
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.0625
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.3125
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.0625
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.0312
+Há diferença significativa (p < 0.05) em Monte Alegre de Sergipe.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+
+Nível 2:
+Estatística = 24.000, p-valor = 0.4648
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 5.000, p-valor = 0.0781
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 5.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 4.000, p-valor = 0.8750
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 3.000, p-valor = 0.3125
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 14.000, p-valor = 0.6406
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 6.000, p-valor = 0.0137
+Há diferença significativa (p < 0.05) em Porto da Folha.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+
+Nível 3:
+Estatística = 14.000, p-valor = 0.1016
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Carira
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Carira.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Carira.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Carira.
+
+Município: Frei Paulo
+Número de turmas insuficiente para análise estatística.
+
+Município: Aquidabã
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Aquidabã.
+
+Nível 2:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Aquidabã.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Aquidabã.
+
+Município: Nossa Senhora das Dores
+Número de turmas insuficiente para análise estatística.
+
+Município: Areia Branca
+Número de turmas insuficiente para análise estatística.
+
+Município: Itabaiana
+
+Nível 1:
+Estatística = 12.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Itabaiana.
+
+Nível 2:
+Estatística = 18.000, p-valor = 0.1099
+Não há diferença significativa (p ≥ 0.05) em Itabaiana.
+
+Nível 3:
+Estatística = 9.000, p-valor = 0.0322
+Há diferença significativa (p < 0.05) em Itabaiana.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+
+Município: Poço Verde
+
+Nível 1:
+Estatística = 4.000, p-valor = 0.8750
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 2:
+Estatística = 5.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 29.000, p-valor = 0.7221
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 2:
+Estatística = 65.000, p-valor = 0.5862
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 46.000, p-valor = 0.2552
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Município: Tobias Barreto
+
+Nível 1:
+Estatística = 14.000, p-valor = 0.1934
+Não há diferença significativa (p ≥ 0.05) em Tobias Barreto.
+
+Nível 2:
+Estatística = 30.000, p-valor = 0.8311
+Não há diferença significativa (p ≥ 0.05) em Tobias Barreto.
+
+Nível 3:
+Estatística = 15.000, p-valor = 0.2324
+Não há diferença significativa (p ≥ 0.05) em Tobias Barreto.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 34.000, p-valor = 0.2454
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 2:
+Estatística = 71.000, p-valor = 0.8176
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 3:
+Estatística = 44.000, p-valor = 0.2146
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Município: Riachão do Dantas
+Número de turmas insuficiente para análise estatística.
+
+Município: Neópolis
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.0625
+Não há diferença significativa (p ≥ 0.05) em Neópolis.
+
+Nível 2:
+Estatística = 5.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Neópolis.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Neópolis.
+
+Município: Propriá
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Propriá.
+
+Nível 2:
+Estatística = 6.000, p-valor = 0.8125
+Não há diferença significativa (p ≥ 0.05) em Propriá.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Propriá.
+
+Município: Capela
+
+Nível 1:
+Estatística = 4.000, p-valor = 0.0137
+Há diferença significativa (p < 0.05) em Capela.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+
+Nível 2:
+Estatística = 18.000, p-valor = 0.3750
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.0312
+Há diferença significativa (p < 0.05) em Capela.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+
+Município: Japoatã
+
+Nível 1:
+Estatística = 3.000, p-valor = 0.3125
+Não há diferença significativa (p ≥ 0.05) em Japoatã.
+
+Nível 2:
+Estatística = 10.500, p-valor = 0.3281
+Não há diferença significativa (p ≥ 0.05) em Japoatã.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.0625
+Não há diferença significativa (p ≥ 0.05) em Japoatã.
+
+Município: Pacatuba
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.0312
+Há diferença significativa (p < 0.05) em Pacatuba.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+
+Nível 2:
+Estatística = 20.500, p-valor = 0.8438
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.0625
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Município: Laranjeiras
+Número de turmas insuficiente para análise estatística.
+
+Município: Aracaju
+
+Nível 1:
+Estatística = 181.500, p-valor = 0.6244
+Não há diferença significativa (p ≥ 0.05) em Aracaju.
+
+Nível 2:
+Estatística = 213.000, p-valor = 0.0367
+Há diferença significativa (p < 0.05) em Aracaju.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+
+Nível 3:
+Estatística = 205.500, p-valor = 0.0276
+Há diferença significativa (p < 0.05) em Aracaju.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+
+Município: Nossa Senhora do Socorro
+
+Nível 1:
+Estatística = 9.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 2:
+Estatística = 14.000, p-valor = 0.6406
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 3:
+Estatística = 4.000, p-valor = 0.1094
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Município: São Cristóvão
+
+Nível 1:
+Estatística = 16.000, p-valor = 0.2754
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 2:
+Estatística = 13.000, p-valor = 0.0830
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 3:
+Estatística = 8.000, p-valor = 0.0244
+Há diferença significativa (p < 0.05) em São Cristóvão.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+
+Município: Boquim
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Boquim.
+
+Nível 2:
+Estatística = 6.000, p-valor = 0.8125
+Não há diferença significativa (p ≥ 0.05) em Boquim.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.3750
+Não há diferença significativa (p ≥ 0.05) em Boquim.
+
+Município: Cristinápolis
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Cristinápolis.
+
+Nível 2:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Cristinápolis.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Cristinápolis.
+
+Município: Salgado
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Salgado.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.0625
+Não há diferença significativa (p ≥ 0.05) em Salgado.
+
+Nível 3:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Salgado.
+
+Município: Umbaúba
+
+Nível 1:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Umbaúba.
+
+Nível 2:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Umbaúba.
+
+Nível 3:
+Estatística = 5.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Umbaúba.
+
+Município: Estância
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Estância.
+
+Nível 2:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Estância.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Estância.
+
+Município: Indiaroba
+Número de turmas insuficiente para análise estatística.
+
+Município: Santa Luzia do Itanhy
+Número de turmas insuficiente para análise estatística.
+
+Município: Itaporanga d'Ajuda
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Itaporanga d'Ajuda.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Itaporanga d'Ajuda.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Itaporanga d'Ajuda.
+
+Município: Itabaianinha
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Itabaianinha.
+
+Nível 2:
+Estatística = 5.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Itabaianinha.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.3750
+Não há diferença significativa (p ≥ 0.05) em Itabaianinha.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA ANÁLISE LINGUÍSTICA (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_1 e form_2:
+Qui-quadrado = 166.703, p-valor = 0.0000
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[ 731. 1851. 1223.]
+ [ 414. 1527. 1621.]]
+
+Tabela esperada sob a hipótese nula:
+[[ 591.4 1744.7 1468.9]
+ [ 553.6 1633.3 1375.1]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 5.74  2.54 -6.42]
+ [-5.93 -2.63  6.63]]
+ 
+ 
+ === ANÁLISE CONSIDERANDO ORALIDADE E LEITURA (FORMATIVAS 1 E 3) PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 2300.000, p-valor = 0.0000
+Há diferença significativa (p < 0.05) nas proporções de Nível 1 entre os testes.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 4808.500, p-valor = 0.0054
+Há diferença significativa (p < 0.05) nas proporções de Nível 2 entre os testes.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 3334.500, p-valor = 0.0000
+Há diferença significativa (p < 0.05) nas proporções de Nível 3 entre os testes.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+---
+
+=== ANÁLISE CONSIDERANDO ORALIDADE E LEITURA POR MUNICÍPIO (FORMATIVAS 1 E 3) ===
+
+
+Município: Canindé de São Francisco
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.3125
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.1875
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 2:
+Estatística = 6.000, p-valor = 0.8125
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 3.000, p-valor = 0.3125
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 5.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 6.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 7.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 27.000, p-valor = 0.9727
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 8.000, p-valor = 0.0244
+Há diferença significativa (p < 0.05) em Porto da Folha.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+
+Nível 3:
+Estatística = 15.000, p-valor = 0.1230
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Carira
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Carira.
+
+Nível 2:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Carira.
+
+Nível 3:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Carira.
+
+Município: Frei Paulo
+Número de turmas insuficiente para análise estatística.
+
+Município: Aquidabã
+Número de turmas insuficiente para análise estatística.
+
+Município: Areia Branca
+Número de turmas insuficiente para análise estatística.
+
+Município: Itabaiana
+
+Nível 1:
+Estatística = 20.000, p-valor = 0.4922
+Não há diferença significativa (p ≥ 0.05) em Itabaiana.
+
+Nível 2:
+Estatística = 6.000, p-valor = 0.0547
+Não há diferença significativa (p ≥ 0.05) em Itabaiana.
+
+Nível 3:
+Estatística = 11.000, p-valor = 0.1055
+Não há diferença significativa (p ≥ 0.05) em Itabaiana.
+
+Município: Poço Verde
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 2:
+Estatística = 4.000, p-valor = 0.8750
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 2.000, p-valor = 0.0058
+Há diferença significativa (p < 0.05) em Simão Dias.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+
+Nível 2:
+Estatística = 57.000, p-valor = 0.8647
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 37.000, p-valor = 0.1914
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Município: Tobias Barreto
+
+Nível 1:
+Estatística = 5.000, p-valor = 0.3125
+Não há diferença significativa (p ≥ 0.05) em Tobias Barreto.
+
+Nível 2:
+Estatística = 21.000, p-valor = 0.9102
+Não há diferença significativa (p ≥ 0.05) em Tobias Barreto.
+
+Nível 3:
+Estatística = 14.000, p-valor = 0.3594
+Não há diferença significativa (p ≥ 0.05) em Tobias Barreto.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 32.000, p-valor = 0.1117
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 2:
+Estatística = 49.000, p-valor = 0.8261
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 3:
+Estatística = 34.000, p-valor = 0.1514
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Município: Riachão do Dantas
+Número de turmas insuficiente para análise estatística.
+
+Município: Neópolis
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Neópolis.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Neópolis.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Neópolis.
+
+Município: Propriá
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Propriá.
+
+Nível 2:
+Estatística = 7.000, p-valor = 0.5625
+Não há diferença significativa (p ≥ 0.05) em Propriá.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Propriá.
+
+Município: Capela
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.0156
+Há diferença significativa (p < 0.05) em Capela.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+
+Nível 2:
+Estatística = 10.000, p-valor = 0.3125
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Nível 3:
+Estatística = 7.000, p-valor = 0.0742
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Município: Japoatã
+
+Nível 1:
+Estatística = 3.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Japoatã.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.1562
+Não há diferença significativa (p ≥ 0.05) em Japoatã.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Japoatã.
+
+Município: Pacatuba
+
+Nível 1:
+Estatística = 6.000, p-valor = 0.8125
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Nível 2:
+Estatística = 5.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Nível 3:
+Estatística = 3.000, p-valor = 0.3125
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Município: Laranjeiras
+Número de turmas insuficiente para análise estatística.
+
+Município: Aracaju
+
+Nível 1:
+Estatística = 34.000, p-valor = 0.1398
+Não há diferença significativa (p ≥ 0.05) em Aracaju.
+
+Nível 2:
+Estatística = 83.000, p-valor = 0.9133
+Não há diferença significativa (p ≥ 0.05) em Aracaju.
+
+Nível 3:
+Estatística = 61.000, p-valor = 0.1819
+Não há diferença significativa (p ≥ 0.05) em Aracaju.
+
+Município: Nossa Senhora do Socorro
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.3125
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.0625
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Município: São Cristóvão
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.0625
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 2:
+Estatística = 7.000, p-valor = 0.5625
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 3:
+Estatística = 4.000, p-valor = 0.2188
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Município: Boquim
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Boquim.
+
+Nível 2:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Boquim.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Boquim.
+
+Município: Salgado
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Salgado.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Salgado.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.3750
+Não há diferença significativa (p ≥ 0.05) em Salgado.
+
+Município: Umbaúba
+Número de turmas insuficiente para análise estatística.
+
+Município: Estância
+Número de turmas insuficiente para análise estatística.
+
+Município: Indiaroba
+Número de turmas insuficiente para análise estatística.
+
+Município: Santa Luzia do Itanhy
+Número de turmas insuficiente para análise estatística.
+
+Município: Itaporanga d'Ajuda
+Número de turmas insuficiente para análise estatística.
+
+Município: Itabaianinha
+Número de turmas insuficiente para análise estatística.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA ORALIDADE E LEITURA (FORMATIVAS 1 E 3) (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_1 e form_3:
+Qui-quadrado = 200.642, p-valor = 0.0000
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[ 536. 1362.  940.]
+ [ 236. 1026. 1281.]]
+
+Tabela esperada sob a hipótese nula:
+[[ 407.2 1259.5 1171.4]
+ [ 364.8 1128.5 1049.6]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 6.39  2.89 -6.76]
+ [-6.75 -3.05  7.14]]
+ 
+ 
+ === ANÁLISE CONSIDERANDO ORALIDADE E LEITURA (FORMATIVAS 1 E 4) PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 207.000, p-valor = 0.0000
+Há diferença significativa (p < 0.05) nas proporções de Nível 1 entre os testes.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 315.000, p-valor = 0.0000
+Há diferença significativa (p < 0.05) nas proporções de Nível 2 entre os testes.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 488.000, p-valor = 0.0001
+Há diferença significativa (p < 0.05) nas proporções de Nível 3 entre os testes.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+---
+
+=== ANÁLISE CONSIDERANDO ORALIDADE E LEITURA POR MUNICÍPIO (FORMATIVAS 1 E 4) ===
+
+
+Município: Canindé de São Francisco
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 4.000, p-valor = 0.8750
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 10.000, p-valor = 0.1641
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 7.000, p-valor = 0.0186
+Há diferença significativa (p < 0.05) em Porto da Folha.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+
+Nível 3:
+Estatística = 12.000, p-valor = 0.0674
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Poço Verde
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.0076
+Há diferença significativa (p < 0.05) em Simão Dias.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+
+Nível 2:
+Estatística = 21.000, p-valor = 0.2858
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 31.000, p-valor = 0.1770
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Município: Tobias Barreto
+Número de turmas insuficiente para análise estatística.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 9.000, p-valor = 0.0322
+Há diferença significativa (p < 0.05) em Lagarto.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+
+Nível 2:
+Estatística = 4.000, p-valor = 0.0234
+Há diferença significativa (p < 0.05) em Lagarto.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+
+Nível 3:
+Estatística = 18.000, p-valor = 0.2061
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Município: Neópolis
+Número de turmas insuficiente para análise estatística.
+
+Município: Propriá
+Número de turmas insuficiente para análise estatística.
+
+Município: Capela
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Município: Japoatã
+Número de turmas insuficiente para análise estatística.
+
+Município: Pacatuba
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Nível 2:
+Estatística = 3.500, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Município: Aracaju
+Número de turmas insuficiente para análise estatística.
+
+Município: Nossa Senhora do Socorro
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 2:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 3:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Município: São Cristóvão
+
+Nível 1:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 2:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 3:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Município: Boquim
+Número de turmas insuficiente para análise estatística.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA ORALIDADE E LEITURA (FORMATIVAS 1 E 4) (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_1 e form_4:
+Qui-quadrado = 297.239, p-valor = 0.0000
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[255. 536. 410.]
+ [ 66. 249. 731.]]
+
+Tabela esperada sob a hipótese nula:
+[[171.6 419.6 609.9]
+ [149.4 365.4 531.1]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 6.37  5.68 -8.09]
+ [-6.82 -6.09  8.67]]
+ 
+ 
+ === ANÁLISE CONSIDERANDO ORALIDADE E LEITURA (FORMATIVA 1 E SOMATIVA) PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 53.000, p-valor = 0.0002
+Há diferença significativa (p < 0.05) nas proporções de Nível 1 entre os testes.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 173.000, p-valor = 0.0014
+Há diferença significativa (p < 0.05) nas proporções de Nível 2 entre os testes.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 168.000, p-valor = 0.0056
+Há diferença significativa (p < 0.05) nas proporções de Nível 3 entre os testes.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+---
+
+=== ANÁLISE CONSIDERANDO ORALIDADE E LEITURA POR MUNICÍPIO (FORMATIVA 1 E SOMATIVA) ===
+
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.3750
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Poço Verde
+Número de turmas insuficiente para análise estatística.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 11.500, p-valor = 0.0309
+Há diferença significativa (p < 0.05) em Simão Dias.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+
+Nível 2:
+Estatística = 43.000, p-valor = 0.5509
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 38.000, p-valor = 0.3627
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Município: Tobias Barreto
+Número de turmas insuficiente para análise estatística.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 4.000, p-valor = 0.0547
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.0098
+Há diferença significativa (p < 0.05) em Lagarto.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+
+Nível 3:
+Estatística = 3.000, p-valor = 0.0781
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Município: Neópolis
+Número de turmas insuficiente para análise estatística.
+
+Município: Capela
+Número de turmas insuficiente para análise estatística.
+
+Município: Boquim
+Número de turmas insuficiente para análise estatística.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA ORALIDADE E LEITURA (FORMATIVAS 1 E 5) (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_1 e form_somativa:
+Qui-quadrado = 107.325, p-valor = 0.0000
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[101. 292. 281.]
+ [ 16. 172. 398.]]
+
+Tabela esperada sob a hipótese nula:
+[[ 62.6 248.2 363.2]
+ [ 54.4 215.8 315.8]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 4.86  2.78 -4.31]
+ [-5.21 -2.98  4.63]]
+ 
+ 
+ === ANÁLISE CONSIDERANDO ORALIDADE E LEITURA (FORMATIVAS 3 E 4) PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 135.500, p-valor = 0.0275
+Há diferença significativa (p < 0.05) nas proporções de Nível 1 entre os testes.
+A proporção de alunos no Nível 1 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 489.000, p-valor = 0.0045
+Há diferença significativa (p < 0.05) nas proporções de Nível 2 entre os testes.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 481.000, p-valor = 0.0014
+Há diferença significativa (p < 0.05) nas proporções de Nível 3 entre os testes.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+---
+
+=== ANÁLISE CONSIDERANDO ORALIDADE E LEITURA POR MUNICÍPIO (FORMATIVAS 3 E 4) ===
+
+
+Município: Canindé de São Francisco
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 2:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 1.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 15.000, p-valor = 0.4258
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 3:
+Estatística = 15.000, p-valor = 0.4258
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Poço Verde
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.1088
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 2:
+Estatística = 24.000, p-valor = 0.7213
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 19.000, p-valor = 0.2132
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Município: Tobias Barreto
+Número de turmas insuficiente para análise estatística.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 4.000, p-valor = 0.4375
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 2:
+Estatística = 18.000, p-valor = 0.3750
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 3:
+Estatística = 22.000, p-valor = 0.3652
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Município: Neópolis
+Número de turmas insuficiente para análise estatística.
+
+Município: Propriá
+Número de turmas insuficiente para análise estatística.
+
+Município: Capela
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Município: Japoatã
+Número de turmas insuficiente para análise estatística.
+
+Município: Pacatuba
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Nível 2:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Nível 3:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Município: Aracaju
+Número de turmas insuficiente para análise estatística.
+
+Município: Nossa Senhora do Socorro
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 2:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 3:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Município: São Cristóvão
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 2:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 3:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Município: Boquim
+Número de turmas insuficiente para análise estatística.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA ORALIDADE E LEITURA (FORMATIVAS 3 E 4) (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_3 e form_4:
+Qui-quadrado = 51.304, p-valor = 0.0000
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[104. 386. 595.]
+ [ 66. 249. 731.]]
+
+Tabela esperada sob a hipótese nula:
+[[ 86.6 323.3 675.1]
+ [ 83.4 311.7 650.9]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 1.88  3.49 -3.08]
+ [-1.91 -3.55  3.14]]
+ 
+ 
+ === ANÁLISE CONSIDERANDO ORALIDADE E LEITURA (FORMATIVA 3 E SOMATIVA) PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 65.500, p-valor = 0.2347
+Não há diferença significativa (p ≥ 0.05) nas proporções de Nível 1 entre os testes.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 209.000, p-valor = 0.0825
+Não há diferença significativa (p ≥ 0.05) nas proporções de Nível 2 entre os testes.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 185.000, p-valor = 0.0332
+Há diferença significativa (p < 0.05) nas proporções de Nível 3 entre os testes.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+---
+
+=== ANÁLISE CONSIDERANDO ORALIDADE E LEITURA POR MUNICÍPIO (FORMATIVA 3 E SOMATIVA) ===
+
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Poço Verde
+Número de turmas insuficiente para análise estatística.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 12.000, p-valor = 0.7353
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 2:
+Estatística = 28.000, p-valor = 0.6565
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 32.000, p-valor = 0.5829
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Município: Tobias Barreto
+Número de turmas insuficiente para análise estatística.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 4.500, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 2:
+Estatística = 9.000, p-valor = 0.1289
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 3:
+Estatística = 8.000, p-valor = 0.0977
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Município: Neópolis
+Número de turmas insuficiente para análise estatística.
+
+Município: Capela
+Número de turmas insuficiente para análise estatística.
+
+Município: Boquim
+Número de turmas insuficiente para análise estatística.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA ORALIDADE E LEITURA (FORMATIVAS 1 E 5) (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_3 e form_somativa:
+Qui-quadrado = 27.145, p-valor = 0.0000
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[ 46. 231. 339.]
+ [ 16. 172. 398.]]
+
+Tabela esperada sob a hipótese nula:
+[[ 31.8 206.5 377.7]
+ [ 30.2 196.5 359.3]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 2.52  1.7  -1.99]
+ [-2.59 -1.75  2.04]]
+ 
+ 
+ === ANÁLISE CONSIDERANDO ORALIDADE E LEITURA (FORMATIVA 4 E SOMATIVA) PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 38.000, p-valor = 0.9373
+Não há diferença significativa (p ≥ 0.05) nas proporções de Nível 1 entre os testes.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 145.000, p-valor = 0.1866
+Não há diferença significativa (p ≥ 0.05) nas proporções de Nível 2 entre os testes.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 155.000, p-valor = 0.2743
+Não há diferença significativa (p ≥ 0.05) nas proporções de Nível 3 entre os testes.
+---
+
+=== ANÁLISE CONSIDERANDO ORALIDADE E LEITURA POR MUNICÍPIO (FORMATIVA 4 E SOMATIVA) ===
+
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 3:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Poço Verde
+Número de turmas insuficiente para análise estatística.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.0679
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 2:
+Estatística = 6.000, p-valor = 0.0929
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 4.500, p-valor = 0.0189
+Há diferença significativa (p < 0.05) em Simão Dias.
+A proporção de alunos no Nível 3 DIMINUIU significativamente no teste 2.
+
+Município: Tobias Barreto
+Número de turmas insuficiente para análise estatística.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 4.000, p-valor = 0.8750
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 2:
+Estatística = 8.000, p-valor = 0.1953
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+/home/fabcmc/anaconda3/lib/python3.13/site-packages/scipy/stats/_wilcoxon.py:172: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+
+Nível 3:
+Estatística = 11.000, p-valor = 0.2031
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Município: Neópolis
+Número de turmas insuficiente para análise estatística.
+
+Município: Capela
+Número de turmas insuficiente para análise estatística.
+
+Município: Boquim
+Número de turmas insuficiente para análise estatística.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA ORALIDADE E LEITURA (FORMATIVAS 1 E 5) (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_4 e form_somativa:
+Qui-quadrado = 8.749, p-valor = 0.0126
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[ 27. 134. 430.]
+ [ 16. 172. 398.]]
+
+Tabela esperada sob a hipótese nula:
+[[ 21.6 153.6 415.8]
+ [ 21.4 152.4 412.2]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 1.16 -1.59  0.7 ]
+ [-1.17  1.59 -0.7 ]]
+ 
+ 
+ === ANÁLISE CONSIDERANDO PRODUÇÃO ESCRITA (FORMATIVAS 3 E 4) PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 377.000, p-valor = 0.8560
+Não há diferença significativa (p ≥ 0.05) nas proporções de Nível 1 entre os testes.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 587.500, p-valor = 0.0247
+Há diferença significativa (p < 0.05) nas proporções de Nível 2 entre os testes.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 541.000, p-valor = 0.0360
+Há diferença significativa (p < 0.05) nas proporções de Nível 3 entre os testes.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+---
+
+=== ANÁLISE CONSIDERANDO PRODUÇÃO ESCRITA (FORMATIVAS 3 E 4) POR MUNICÍPIO ===
+
+
+Município: Canindé de São Francisco
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 2:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Canindé de São Francisco.
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 2:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.0625
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 24.000, p-valor = 0.7695
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 3:
+Estatística = 18.000, p-valor = 0.3750
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Poço Verde
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 2:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Poço Verde.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 9.500, p-valor = 0.8335
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 2:
+Estatística = 17.000, p-valor = 0.2845
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 14.000, p-valor = 0.3139
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Município: Tobias Barreto
+Número de turmas insuficiente para análise estatística.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 11.000, p-valor = 0.1875
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 2:
+Estatística = 7.000, p-valor = 0.0371
+Há diferença significativa (p < 0.05) em Lagarto.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+
+Nível 3:
+Estatística = 7.000, p-valor = 0.0742
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Município: Neópolis
+Número de turmas insuficiente para análise estatística.
+
+Município: Propriá
+Número de turmas insuficiente para análise estatística.
+
+Município: Capela
+
+Nível 1:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Nível 2:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Nível 3:
+Estatística = 1.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Capela.
+
+Município: Japoatã
+Número de turmas insuficiente para análise estatística.
+
+Município: Pacatuba
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Nível 2:
+Estatística = 2.000, p-valor = 0.7500
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Nível 3:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Pacatuba.
+
+Município: Aracaju
+Número de turmas insuficiente para análise estatística.
+
+Município: Nossa Senhora do Socorro
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.2500
+Não há diferença significativa (p ≥ 0.05) em Nossa Senhora do Socorro.
+
+Município: São Cristóvão
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 2:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Nível 3:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em São Cristóvão.
+
+Município: Boquim
+Número de turmas insuficiente para análise estatística.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA PRODUÇÃO ESCRITA (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_3 e form_4:
+Qui-quadrado = 9.054, p-valor = 0.0108
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[ 99. 446. 540.]
+ [ 95. 366. 585.]]
+
+Tabela esperada sob a hipótese nula:
+[[ 98.8 413.4 572.8]
+ [ 95.2 398.6 552.2]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 0.02  1.6  -1.37]
+ [-0.02 -1.63  1.4 ]]
+ 
+ 
+ === ANÁLISE CONSIDERANDO PRODUÇÃO ESCRITA (FORMATIVA 3 E SOMATIVA) PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 125.000, p-valor = 0.9611
+Não há diferença significativa (p ≥ 0.05) nas proporções de Nível 1 entre os testes.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 97.000, p-valor = 0.0010
+Há diferença significativa (p < 0.05) nas proporções de Nível 2 entre os testes.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 111.500, p-valor = 0.0009
+Há diferença significativa (p < 0.05) nas proporções de Nível 3 entre os testes.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+---
+
+=== ANÁLISE CONSIDERANDO PRODUÇÃO ESCRITA POR MUNICÍPIO (FORMATIVA 3 E SOMATIVA) ===
+
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 2:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Poço Verde
+Número de turmas insuficiente para análise estatística.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 16.000, p-valor = 0.4409
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 2:
+Estatística = 15.000, p-valor = 0.6744
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 29.000, p-valor = 0.7221
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Município: Tobias Barreto
+Número de turmas insuficiente para análise estatística.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 3.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 2:
+Estatística = 2.000, p-valor = 0.0059
+Há diferença significativa (p < 0.05) em Lagarto.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.0059
+Há diferença significativa (p < 0.05) em Lagarto.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+
+Município: Neópolis
+Número de turmas insuficiente para análise estatística.
+
+Município: Capela
+Número de turmas insuficiente para análise estatística.
+
+Município: Boquim
+Número de turmas insuficiente para análise estatística.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA PRODUÇÃO ESCRITA (FORMATIVAS 1 E 5) (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_3 e form_somativa:
+Qui-quadrado = 23.123, p-valor = 0.0000
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[ 33. 281. 302.]
+ [ 24. 194. 368.]]
+
+Tabela esperada sob a hipótese nula:
+[[ 29.2 243.4 343.4]
+ [ 27.8 231.6 326.6]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 0.7   2.41 -2.23]
+ [-0.72 -2.47  2.29]]
+ 
+ 
+ === ANÁLISE CONSIDERANDO PRODUÇÃO ESCRITA (FORMATIVA 3 E SOMATIVA) PARA TODO O ESTADO DE SERGIPE ===
+
+Teste de Wilcoxon para Nível 1:
+Estatística = 125.000, p-valor = 0.9611
+Não há diferença significativa (p ≥ 0.05) nas proporções de Nível 1 entre os testes.
+---
+Teste de Wilcoxon para Nível 2:
+Estatística = 97.000, p-valor = 0.0010
+Há diferença significativa (p < 0.05) nas proporções de Nível 2 entre os testes.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+---
+Teste de Wilcoxon para Nível 3:
+Estatística = 111.500, p-valor = 0.0009
+Há diferença significativa (p < 0.05) nas proporções de Nível 3 entre os testes.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+---
+
+=== ANÁLISE CONSIDERANDO PRODUÇÃO ESCRITA POR MUNICÍPIO (FORMATIVA 3 E SOMATIVA) ===
+
+
+Município: Monte Alegre de Sergipe
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 2:
+Estatística = 3.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Nível 3:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Monte Alegre de Sergipe.
+
+Município: Poço Redondo
+
+Nível 1:
+Estatística = 0.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 2:
+Estatística = 0.000, p-valor = 0.5000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Nível 3:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Poço Redondo.
+
+Município: Porto da Folha
+
+Nível 1:
+Estatística = 1.000, p-valor = 1.0000
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 2:
+Estatística = 3.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Nível 3:
+Estatística = 0.000, p-valor = 0.1250
+Não há diferença significativa (p ≥ 0.05) em Porto da Folha.
+
+Município: Poço Verde
+Número de turmas insuficiente para análise estatística.
+
+Município: Simão Dias
+
+Nível 1:
+Estatística = 16.000, p-valor = 0.4409
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 2:
+Estatística = 15.000, p-valor = 0.6744
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Nível 3:
+Estatística = 29.000, p-valor = 0.7221
+Não há diferença significativa (p ≥ 0.05) em Simão Dias.
+
+Município: Tobias Barreto
+Número de turmas insuficiente para análise estatística.
+
+Município: Lagarto
+
+Nível 1:
+Estatística = 3.000, p-valor = 0.6250
+Não há diferença significativa (p ≥ 0.05) em Lagarto.
+
+Nível 2:
+Estatística = 2.000, p-valor = 0.0059
+Há diferença significativa (p < 0.05) em Lagarto.
+A proporção de alunos no Nível 2 DIMINUIU significativamente no teste 2.
+
+Nível 3:
+Estatística = 2.000, p-valor = 0.0059
+Há diferença significativa (p < 0.05) em Lagarto.
+A proporção de alunos no Nível 3 AUMENTOU significativamente no teste 2.
+
+Município: Neópolis
+Número de turmas insuficiente para análise estatística.
+
+Município: Capela
+Número de turmas insuficiente para análise estatística.
+
+Município: Boquim
+Número de turmas insuficiente para análise estatística.
+
+=== ANÁLISE DE TRANSIÇÃO ENTRE NÍVEIS PARA PRODUÇÃO ESCRITA (FORMATIVAS 1 E 5) (ESTADO) ===
+
+Teste qui-quadrado para distribuição dos níveis entre form_3 e form_somativa:
+Qui-quadrado = 23.123, p-valor = 0.0000
+Há diferença significativa (p < 0.05) na distribuição dos níveis entre os testes.
+Tabela observada:
+[[ 33. 281. 302.]
+ [ 24. 194. 368.]]
+
+Tabela esperada sob a hipótese nula:
+[[ 29.2 243.4 343.4]
+ [ 27.8 231.6 326.6]]
+
+Resíduos padronizados (valores absolutos >2 indicam diferenças significativas):
+[[ 0.7   2.41 -2.23]
+ [-0.72 -2.47  2.29]]
+ 
+ 
+ 
