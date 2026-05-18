@@ -81,8 +81,19 @@ To reproduce all analyses, metrics, and charts present in the notebooks, the com
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+   git clone https://github.com/fabcmc/pba_se_2025.git
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install pandas numpy faker openpyxl jupyter
+   ```
+3. Ensure that you have placed the data downloaded in the previous step inside `Data_files/public_data/`.
+4. Start the Jupyter server to browse the reports:
+   ```bash
+   jupyter notebook
+   ```
 
+> 📌 *Note: This repository reflects the technical commitment to methodological excellence, analytical rigor, and respect for data privacy guidelines in public administration, combining my own execution of the analyses with the specialized validation of the FGV DGPE team.*
 
 ---
 
@@ -170,4 +181,16 @@ Para fins de reprodutibilidade de todas as análises e gráficos presentes nos n
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+   git clone https://github.com/fabcmc/pba_se_2025.git
+   ```
+2. Instale as dependências requeridas:
+   ```bash
+   pip install pandas numpy faker openpyxl jupyter
+   ```
+3. Certifique-se de que inseriu os dados baixados no passo anterior em `Data_files/public_data/`.
+4. Inicie o servidor do Jupyter para navegar pelos relatórios:
+   ```bash
+   jupyter notebook
+   ```
+
+> 📌 *Nota:Este repositório reflete o compromisso técnico com a excelência metodológica, rigor analítico e respeito às diretrizes de privacidade de dados na administração pública, combinando a execução própria das análises com a validação especializada da equipe da FGV DGPE.*
